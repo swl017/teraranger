@@ -53,6 +53,7 @@ TerarangerEvo::TerarangerEvo()
   private_node_handle_.getParam("sensor_type", sensor_type_);
   ROS_INFO("[%s] sensor type: %s", ros::this_node::getName().c_str(), sensor_type_.c_str());
 
+//  sensor_type_ = "Evo_3m";
   if (sensor_type_ == "Evo_60m")
   {
     range_msg.max_range = EVO_60M_MAX;
